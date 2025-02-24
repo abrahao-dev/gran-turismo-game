@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #000; /* Black background for better contrast */
+  font-family: 'Arial', sans-serif;
+}
+
+#gameContainer {
+  width: 100vw;
+  height: 100vh;
+  position: relative; /* Position relative for overlay */
+}
+
+#gameCanvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+#speedometer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  background: rgba(0,0,0,0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+#lap-counter {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0,0,0,0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#lap-time {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: rgba(0,0,0,0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#best-lap {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  background: rgba(0,0,0,0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#fps-counter {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(0,0,0,0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+#mini-map {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 150px;
+  height: 150px;
+  background: rgba(0,0,0,0.5);
+  border: 2px solid white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#mini-map-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+#debug-info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-family: monospace;
+  background: rgba(0,0,0,0.7);
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 12px;
+}
